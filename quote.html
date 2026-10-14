@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="newlogo.jpg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5f1">
+  <meta name="description" content="Tell Sparsham Construction about your building project and what you have in mind.">
+  <title>Start Your Project — Sparsham Construction</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="inquiry-page">
+  <header class="site-header" id="top">
+    <a class="brand" href="index.html" aria-label="Sparsham home">
+      <span class="brand-mark" aria-hidden="true"><img src="newlogo.jpg" alt="" class="brand-image"></span>
+      <span class="brand-name">SPARSHAM</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a href="about.html">About us</a><a href="index.html#services">Services</a><a href="index.html#projects">Projects</a><a href="index.html#process">Our process</a><a class="nav-cta" href="index.html#contact">Let's talk <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main>
+    <section class="inquiry-hero"><div class="wrap inquiry-hero-inner"><a class="back-link" href="index.html#projects"><span aria-hidden="true">←</span> Back to our work</a><p class="eyebrow"><span></span> New project enquiry</p><h1>Tell us what<br>you're <em>thinking.</em></h1><p class="inquiry-lead">A few details will help us get a feel for your project. No need to have it all figured out—we're happy to work through the details together.</p><div class="inquiry-note"><span class="note-icon">✳</span><span>Just exploring? That's a great place to start.<br><strong>We'll take it from here, together.</strong></span></div></div></section>
+    <section class="inquiry-section"><div class="wrap inquiry-layout"><aside class="form-aside"><p class="eyebrow"><span></span> A good place to begin</p><h2>Every great build<br>starts with a<br><em>conversation.</em></h2><p>Share what you can below. Our team will follow up to learn a little more and help you figure out what comes next.</p><div class="aside-contact"><span class="aside-rule"></span><span>Prefer a quick hello?<br><a href="mailto:hello@northlineconstruction.com">Email our team ↗</a></span></div></aside>
+      <form class="project-form" id="project-form">
+        <div class="form-heading"><span>01 — YOUR PROJECT</span><span class="required-note">* Required</span></div>
+        <fieldset><legend>What are you looking to build? <span>*</span></legend><div class="project-types">
+          <label class="type-option"><input type="radio" name="projectType" value="New home" required><span class="type-icon">⌂</span><span>New home</span></label>
+          <label class="type-option"><input type="radio" name="projectType" value="Renovation"><span class="type-icon">↗</span><span>Renovation</span></label>
+          <label class="type-option"><input type="radio" name="projectType" value="Commercial"><span class="type-icon">▤</span><span>Commercial</span></label>
+          <label class="type-option"><input type="radio" name="projectType" value="Other"><span class="type-icon">＋</span><span>Something else</span></label>
+        </div></fieldset>
+        <div class="form-grid">
+          <label class="field"><span>Where is your project? <b>*</b></span><input type="text" name="location" placeholder="Suburb or postcode" autocomplete="address-level2" required></label>
+          <label class="field"><span>When are you hoping to start?</span><select name="timeline"><option value="" selected disabled>Select a timeframe</option><option>As soon as possible</option><option>Within 3–6 months</option><option>Within 6–12 months</option><option>More than 12 months away</option><option>Just exploring</option></select></label>
+          <label class="field"><span>Estimated budget</span><select name="budget"><option value="" selected disabled>Select a range</option><option>Under $100,000</option><option>$100,000 – $300,000</option><option>$300,000 – $600,000</option><option>$600,000 – $1,000,000</option><option>$1,000,000+</option><option>Not sure yet</option></select></label>
+          <label class="field"><span>How did you hear about us?</span><select name="referral"><option value="" selected disabled>Select one</option><option>Friend or family</option><option>Google search</option><option>Social media</option><option>Past project</option><option>Other</option></select></label>
+          <label class="field field-full"><span>Tell us a bit about your plans <b>*</b></span><textarea name="details" rows="4" placeholder="What would you love to build? Any details that will help us understand your project…" required></textarea></label>
+        </div>
+        <div class="form-heading contact-heading"><span>02 — YOUR DETAILS</span></div>
+        <div class="form-grid">
+          <label class="field"><span>Your name <b>*</b></span><input type="text" name="name" placeholder="Full name" autocomplete="name" required></label>
+          <label class="field"><span>Email address <b>*</b></span><input type="email" name="email" placeholder="you@example.com" autocomplete="email" required></label>
+          <label class="field"><span>Phone number</span>*<input type="tel" name="phone" placeholder="Your best contact number" autocomplete="tel"></label>
+        </div>
+        <div class="submit-row"><p>By sending this enquiry, you're happy for our team to get in touch about your project.</p><button class="button button-dark" type="submit">Send project enquiry <span aria-hidden="true">↗</span></button></div>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-main"><a class="brand footer-brand" href="index.html" aria-label="Sparsham home"><span class="brand-mark"><img src="newlogo.jpg" alt="" class="brand-image"></span><span class="brand-name">SPARSHAM</span></a><p>Thoughtful spaces.<br>Good people. Built to last.</p><div class="footer-links"><a href="about.html">About us</a><a href="index.html#projects">Projects</a><a href="index.html#contact">Get in touch</a><a href="mailto:hello@northlineconstruction.com">Email us ↗</a></div></div><div class="wrap footer-bottom"><span>© <span id="year">2026</span> Sparsham Construction</span><span>Built with care, from the ground up.</span><a href="#top">Back to top ↑</a></div></footer>
+</body>
+</html>
